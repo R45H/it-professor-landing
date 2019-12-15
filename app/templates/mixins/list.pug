@@ -1,0 +1,10 @@
+mixin list(data)
+	.list
+		.list__icon-wrap
+			.list__icon(style=`background-image: url(${data.icon})`)
+
+		.list__wrap
+			if data.title
+				.list__title= data.title
+
+			.list__desc= data.desc

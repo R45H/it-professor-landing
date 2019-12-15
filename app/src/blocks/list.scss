@@ -1,0 +1,27 @@
+$name: list;
+
+.#{$name} {
+	display: flex;
+
+	&__icon-wrap {
+		width: 70px;
+		flex: none;
+	}
+
+	&__icon {
+		width: 100%;
+		padding-bottom: 100%;
+		background: no-repeat center / contain;
+	}
+
+	&__wrap {
+		padding-left: 15px;
+	}
+
+	&__title {
+		font-weight: bold;
+		margin-bottom: 5px;
+	}
+
+	&__desc {}
+}
