@@ -1,0 +1,10 @@
+$name: title;
+
+.#{$name} {
+	font-size: 2.4rem;
+	font-weight: bold;
+
+	&_upper {
+		text-transform: uppercase;
+	}
+}
