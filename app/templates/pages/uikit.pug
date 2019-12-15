@@ -1,3 +1,5 @@
+include ../mixins/num
+
 .mb-30
 
 .container
@@ -9,3 +11,8 @@
 
 .mb-30
 	.banner(style='background-image: url(img/content/banner.jpg)')
+
+.container
+	.row
+		.col-sm-4.mb-30
+			+num(num[0])
