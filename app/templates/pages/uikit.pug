@@ -1,6 +1,7 @@
 include ../mixins/num
 include ../mixins/list
-include ../mixins/slider-partners
+include ../mixins/partner
+include ../mixins/slider
 include ../mixins/resource
 include ../mixins/project
 
@@ -32,13 +33,28 @@ include ../mixins/project
 		.col-sm-6.mb-30
 			+list(list_2[0])
 
-	.mb-30
-		+slider-partners(slider_partners)
-
 	.row
-		.col-sm-6.mb-30
-			+resource(resource[0])
+		.col-sm-4.mb-30
+			+partner(partner[0])
 
 	.row
 		.col-sm-4.mb-30
 			+project(project[5])
+
+	.mb-30
+		+slider(dataCols='variable')
+
+			each val in partner
+				.slider__item
+					+partner(val)
+
+	.mb-30
+		+slider(dataMdCols=2 dataXlCols=3)
+
+			each val in project
+				.slider__item
+					+project(val)
+
+	.row
+		.col-sm-6.mb-30
+			+resource(resource[0])
