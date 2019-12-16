@@ -1,4 +1,6 @@
 $color-main: #e31e24;
+$color-main-hover: lighten($color-main, 15%);
+$color-main-active: darken($color-main, 10%);
 $color-text: #2b2a29;
 
 $point-sm: 576px;
@@ -9,6 +11,10 @@ $point-xl: 1200px;
 $font-main: 'Arial', sans-serif;
 
 $duration: .3s;
+
+%transition {
+	transition: $duration / 2 ease;
+}
 
 // ----------------------------
 // МИКСИНЫ ДЛЯ ТЕКУЩЕГО ПРОЕКТА

@@ -1,0 +1,71 @@
+$name: slider-partners;
+
+.#{$name} {
+	position: relative;
+	padding: 0 15px 0 0;
+
+	&__wrap {
+		padding: 0;
+		overflow: hidden;
+	}
+
+	a {
+		outline: none;
+	}
+
+	.slick-list {
+		margin: -10px;
+	}
+
+	.slick-slide {
+		outline: none;
+
+		> div {
+			display: flex;
+		}
+	}
+
+	.slick-track {
+		display: flex;
+		align-items: center;
+	}
+
+	&__item {
+		padding: 10px;
+	}
+
+	&__img {
+		max-height: 70px;
+		max-width: 256px;
+		width: auto;
+	}
+
+	&__btn {
+		@extend %transition;
+		width: 30px;
+		height: 100%;
+		padding: 10px;
+		cursor: pointer;
+		position: absolute;
+		right: -15px;
+		top: 0;
+		z-index: 1;
+		color: $color-text;
+
+		svg {
+			display: block;
+			width: 100%;
+			height: 100%;
+			stroke: currentColor;
+		}
+
+		&:hover,
+		&:focus {
+			color: $color-main;
+		}
+
+		&:active {
+			color: $color-main-active;
+		}
+	}
+}
