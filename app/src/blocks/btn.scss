@@ -1,0 +1,78 @@
+$name: btn;
+
+.#{$name} {
+	@extend %transition;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	font-family: $font-main;
+	font-size: 1.8rem;
+	font-weight: normal;
+	color: white;
+	background: $color-main;
+	border: none;
+	border-radius: 1rem;
+	text-align: center;
+	text-transform: none;
+	text-decoration: none;
+	cursor: pointer;
+	line-height: 1.2;
+	outline: none;
+	padding: .5rem 1rem;
+	word-break: break-word;
+	user-select: none;
+
+	img {
+		max-height: 21px;
+		width: auto;
+		pointer-events: none;
+
+		&:first-child {
+			margin-right: 1rem;
+		}
+
+		&:last-child {
+			margin-left: 1rem;
+		}
+	}
+
+	&:hover,
+	&:focus {
+		color: white;
+		background-color: $color-main-hover;
+	}
+
+	&:active {
+		color: white;
+		background-color: $color-main-active;
+	}
+
+	&_size_lg {
+		font-size: 2.4rem;
+		border-radius: 3rem;
+		padding: 1.7rem 4rem;
+		line-height: 1.8;
+
+		img {
+			max-height: 43px;
+
+			&:first-child {
+				margin-right: 3rem;
+			}
+
+			&:last-child {
+				margin-left: 3rem;
+			}
+		}
+	}
+
+	&_wide {
+		display: flex;
+		width: 100%;
+	}
+}
+
+input.#{$name} {
+	white-space: pre-wrap;
+}
