@@ -31,6 +31,26 @@ textarea {
 	resize: none;
 }
 
+a {
+	text-decoration: none;
+	color: inherit;
+
+	&:not([class]),
+	&[class=''] {
+		@extend %transition;
+		color: $color-main;
+		border-bottom: 1px solid currentColor;
+
+		&:hover {
+			color: $color-main-hover;
+		}
+
+		&:active {
+			color: $color-main-active;
+		}
+	}
+}
+
 hr {
 	margin: 0;
 }
