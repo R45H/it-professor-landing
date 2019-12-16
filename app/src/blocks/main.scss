@@ -2,4 +2,7 @@ $name: main;
 
 .#{$name} {
 
+	&__black {
+		background-color: $color-text;
+	}
 }

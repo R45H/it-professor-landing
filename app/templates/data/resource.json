@@ -1,0 +1,18 @@
+{
+	"resource": [
+		{
+			"title": "Интернет-магазин",
+			"logo": "img/content/resource/logo-01.svg",
+			"subtitle": "Печатная техника",
+			"img": "img/content/resource/img-01.jpg",
+			"link": "https://printer-copir.ru/"
+		},
+		{
+			"title": "Интернет-магазин",
+			"logo": "img/content/resource/logo-02.svg",
+			"subtitle": "Мультимедийное оборудование",
+			"img": "img/content/resource/img-02.jpg",
+			"link": "https://avi-display.ru/"
+		}
+	]
+}

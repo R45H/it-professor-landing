@@ -1,6 +1,7 @@
 include ../mixins/num
 include ../mixins/list
 include ../mixins/slider-partners
+include ../mixins/resource
 
 .mb-30
 
@@ -11,6 +12,9 @@ include ../mixins/slider-partners
 
 		.col-sm-4.mb-30
 			.title.title_upper .title.title_upper
+
+		.col-sm-4.mb-30.main__black
+			.title.title_color_white .title.title_color_white
 
 .mb-30
 	.banner(style='background-image: url(img/content/banner.jpg)')
@@ -29,3 +33,7 @@ include ../mixins/slider-partners
 
 	.mb-30
 		+slider-partners(slider_partners)
+
+	.row
+		.col-sm-6.mb-30
+			+resource(resource[0])

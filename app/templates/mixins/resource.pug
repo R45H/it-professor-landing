@@ -1,0 +1,13 @@
+mixin resource(data)
+	.resource
+		.title.title_upper.resource__title= data.title
+
+		.resource__logo-wrap
+			img.resource__logo(src= data.logo alt= data.subtitle)
+
+		a.resource__img-wrap(
+			href= data.link
+			target='_blank'
+		)
+			.resource__img(style=`background-image: url(${data.img})`)
+			.title.title_upper.title_color_white.resource__subtitle= data.subtitle

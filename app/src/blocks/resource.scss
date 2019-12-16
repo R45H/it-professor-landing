@@ -1,0 +1,56 @@
+$name: resource;
+
+.#{$name} {
+
+	&__title {
+		text-align: center;
+		margin-bottom: 10px;
+	}
+
+	&__logo {
+		max-height: 50px;
+		max-width: 100%;
+		display: block;
+		margin: 0 auto 15px;
+	}
+
+	&__img-wrap {
+		text-decoration: none;
+		display: block;
+		position: relative;
+		padding-bottom: 66%;
+	}
+
+	&__img {
+		@extend %transition;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: no-repeat center / cover;
+	}
+
+	&__subtitle {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		padding: 15px 20px;
+		text-align: right;
+		text-shadow: 1px 1px 1px $color-text;
+	}
+}
+
+a.#{$name}__img-wrap {
+
+	&:hover,
+	&:active {
+
+		.#{$name}__img {
+			transform: scale(1.02);
+			filter: brightness(1.1);
+			box-shadow: 4px 4px 8px $color-text;
+		}
+	}
+}
