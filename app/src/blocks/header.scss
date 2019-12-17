@@ -4,6 +4,7 @@ $name: header;
 	box-shadow: 0 0 5px rgba($color-text, .3);
 	position: relative;
 	z-index: 1;
+	flex: 0 0 auto;
 
 	&__row {
 		overflow: hidden;

@@ -1,6 +1,15 @@
 {
 	"global": {
 		"name": "IT Professor",
-		"link_home": "/"
+		"link_home": "/",
+		"tel_1": {
+			"text": "8 (800) 550-41-30",
+			"link": "+78005504130"
+		},
+		"tel_2": {
+			"text": "8 (812) 209-14-10",
+			"link": "+78122091410"
+		},
+		"email": "info@itprofessor.ru"
 	}
 }

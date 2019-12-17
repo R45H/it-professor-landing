@@ -4,6 +4,8 @@ html {
 }
 
 body {
+	display: flex;
+	flex-direction: column;
 	height: 100%;
 	font-size: 1.8rem;
 	font-family: $font-main;

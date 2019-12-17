@@ -1,2 +1,14 @@
+include ../components/logo
+
 // FOOTER
 footer.footer
+	.container.footer__wrap
+		.mb-30.footer__logo-wrap
+			+logo
+
+		.footer__content
+			.footer__content-item
+				a.title.title_weight_normal.link.link_color_white.link_nowrap.link_line_none(href=`tel:${global.tel_2.link}`)= global.tel_2.text
+
+			.footer__content-item
+				a.title.title_weight_normal.link.link_color_white.link_nowrap.link_line_none(href=`mailto:${global.email}`)= global.email
