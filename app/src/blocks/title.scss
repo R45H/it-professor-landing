@@ -4,6 +4,10 @@ $name: title;
 	font-size: 2.4rem;
 	font-weight: bold;
 
+	&_size_sm {
+		font-size: 2rem;
+	}
+
 	&_upper {
 		text-transform: uppercase;
 	}

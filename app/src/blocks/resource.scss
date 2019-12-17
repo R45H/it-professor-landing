@@ -12,6 +12,14 @@ $name: resource;
 		max-width: 100%;
 		display: block;
 		margin: 0 auto 15px;
+
+		@include screen-md() {
+			max-height: 35px;
+		}
+
+		@include screen-lg() {
+			max-height: 50px;
+		}
 	}
 
 	&__img-wrap {

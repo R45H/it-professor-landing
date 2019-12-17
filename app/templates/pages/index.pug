@@ -1,0 +1,112 @@
+include ../components/map
+include ../mixins/banner
+include ../mixins/num
+include ../mixins/list
+include ../mixins/resource
+include ../mixins/partner
+include ../mixins/slider
+include ../mixins/project
+
+.mb-7rem
+	+banner(banner)
+
+.mb-4rem
+	.container
+		.row
+
+			each val in num
+				.col-sm-6.col-xl-3.mb-3rem
+					+num(val)
+
+.container
+	.row
+		.col-lg-4.mb-4rem
+			.title.title_size_sm.text-justify ООО «Ай Ти Профессор» входит в состав группы компаний Display Group, которая работает на российском рынке информационных технологий с 1999 года. Наша специализация — широкопрофильная системная интеграция.
+
+		.col-lg-8.mb-4rem
+			p.mb-4rem Более 800 организаций по Санкт-Петербургу и всей России являются нашими клиентами
+
+			.row
+				each val in list
+					.col-md-6.mb-3rem
+						+list(val)
+
+.mb-2rem
+	.container
+		.row
+
+			each val in resource
+				.col-md-6.mb-5rem
+					+resource(val)
+
+.mb-7rem
+	.container-fluid
+		.title.mb-4rem.text-center Мы являемся авторизованными партнерами
+
+		+slider(dataCols='variable')
+
+			each val in partner
+				.slider__item
+					+partner(val)
+
+.mb-7rem
+	.container
+		.title.mb-4rem.text-center Конкурентные преимущества
+
+		each val in list_2
+			.mb-3rem
+				+list(val)
+
+.mb-7rem
+	.container-fluid
+		.title.mb-4rem.text-center Проекты
+
+		+slider(dataSmCols=2 dataLgCols=3 dataXlCols=4)
+
+			each val in project
+				.slider__item
+					+project(val)
+
+.mb-7rem
+	.container.text-center
+		button.btn.btn_size_lg
+			span Запросить коммерческое предложение
+			img(src='img/icons/envelope.jpg')
+
+.mb-3rem
+	.container
+		.title.mb-4rem.text-center Контакты
+
+		.row
+			.col-lg-7.col-xl-8.mb-4rem.text
+				p
+					b ООО «АйТи Профессор»
+				p Адрес пункта самовывоза: 197022, Санкт-Петербург, ул. Чапыгина, д.6, лит. “М”
+
+				p Адрес местонахождения: 197136, Санкт-Петербург, ул. Профессора Попова, д. 37, лит. «B», БЦ «Сенатор», оф.902
+
+				p Юр.адрес: 197022, Россия, г.Санкт-Петербург, ул. Профессора Попова, д.27, лит.«А», пом. 4-н
+
+				p Р/с: р/счет 40702810394510003269 в Северо-Западном филиале ПАО РОСБАНК
+					br
+					| К/с: 30101810100000000778
+					br
+					| БИК: 044030778
+					br
+					| ИНН: 7813243517
+					br
+					| КПП: 781301001
+					br
+					| ОГРН: 1167847091477
+
+				p
+					b= 'Телефон: '
+						a.link.link_nowrap(href=`tel:${global.tel_2.link}`)= global.tel_2.text
+						| ,
+						|
+						a.link.link_nowrap(href=`tel:${global.tel_1.link}`)= global.tel_1.text
+						br
+						a.link.link_nowrap(href=`mailto:${global.email}`)= global.email
+
+			.col-lg-5.col-xl-4.mb-4rem
+				+map
