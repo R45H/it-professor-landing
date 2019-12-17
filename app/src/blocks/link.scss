@@ -3,15 +3,33 @@ $name: link;
 .#{$name} {
 	@extend a:not([class]);
 
+	&_line_none {
+		border-bottom: none;
+	}
+
 	&_color_white {
 		color: white;
 
-		&:hover {
+		&:hover,
+		&:focus {
 			color: darken(white, 15%);
 		}
 
 		&:active {
 			color: darken(white, 30%);
+		}
+	}
+
+	&_color_text {
+		color: $color-text;
+
+		&:hover,
+		&:focus {
+			color: $color-main;
+		}
+
+		&:active {
+			color: $color-main-active;
 		}
 	}
 }
