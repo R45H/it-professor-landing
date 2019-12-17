@@ -1,0 +1,7 @@
+mixin menu
+	nav.menu
+		ul.menu__wrap
+
+			each val in menu
+				li.menu__item
+					a.link.link_color_text.link_line_none.menu__link(href='#')= val.title

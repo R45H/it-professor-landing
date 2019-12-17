@@ -1,2 +1,23 @@
+include ../components/logo
+include ../components/menu
+
 // HEADER
 header.header
+	.container
+		.row.header__row
+			.col.header__col.header__col_left
+				+logo
+
+			.col.header__col.header__col_center
+				+menu
+
+			.col.header__col.header__col_right
+				.header__contacts
+					.header__link-wrap.mb-10
+						a.title.title_weight_normal.link.link_color_text.link_nowrap.link_line_none(href='tel:+78005504130') 8 (800) 550-41-30
+						.header__link-desc Бесплатно по России
+
+					.mb-10
+						a.title.title_weight_normal.link.link_color_text.link_nowrap.link_line_none(href='tel:+78122091410') 8 (812) 209-14-10
+
+					button.btn.btn_wide Заказать звонок

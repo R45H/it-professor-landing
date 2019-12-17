@@ -1,5 +1,61 @@
 $name: header;
 
 .#{$name} {
+	box-shadow: 0 0 5px rgba($color-text, .3);
+	position: relative;
+	z-index: 1;
 
+	&__row {
+		overflow: hidden;
+		flex-direction: column;
+
+		@include screen-sm() {
+			flex-direction: row;
+			align-items: center;
+		}
+	}
+
+	&__col {
+		padding-top: 15px;
+		padding-bottom: 15px;
+
+		&_left {
+			flex-grow: 2;
+			display: flex;
+			justify-content: center;
+
+				@include screen-sm() {
+					justify-content: flex-start;
+				}
+		}
+
+		&_center {
+			display: none;
+
+			@include screen-lg() {
+				display: block;
+				flex-grow: 4;
+			}
+		}
+
+		&_right {
+			flex-grow: 1;
+		}
+	}
+
+	&__contacts {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__link-wrap {
+		text-align: left;
+	}
+
+	&__link-desc {
+		font-size: 14px;
+		line-height: 1;
+		margin-top: -2px;
+	}
 }

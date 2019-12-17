@@ -32,4 +32,8 @@ $name: link;
 			color: $color-main-active;
 		}
 	}
+
+	&_nowrap {
+		white-space: nowrap;
+	}
 }

@@ -1,0 +1,25 @@
+$name: menu;
+
+.#{$name} {
+	display: flex;
+	justify-content: center;
+
+	&__wrap {
+		margin: -5px -10px;
+		padding: 0;
+		list-style-type: none;
+		display: flex;
+		flex-wrap: wrap;
+		overflow: hidden;
+	}
+
+	&__item {
+		font-size: 2rem;
+		font-weight: bold;
+	}
+
+	&__link {
+		display: block;
+		padding: 5px 10px;
+	}
+}

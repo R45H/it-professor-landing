@@ -8,6 +8,7 @@ include ../mixins/project
 include ../mixins/banner
 
 .mb-30
+	+banner(banner)
 
 .container
 	.row
@@ -23,6 +24,9 @@ include ../mixins/banner
 		.col-sm-3.mb-30
 			a.link.link_line_none(href='#') .link.link_line_none
 
+		.col-sm-3.mb-30
+			a.link.link_nowrap(href='#') .link.link_nowrap
+
 	.row
 		.col-sm-4.mb-30
 			.title .title
@@ -32,6 +36,9 @@ include ../mixins/banner
 
 		.col-sm-4.mb-30.main__black
 			.title.title_color_white .title.title_color_white
+
+		.col-sm-4.mb-30.main__black
+			.title.title_weight_normal .title.title_weight_normal
 
 	.row
 		.col-sm-4.mb-30
@@ -65,9 +72,6 @@ include ../mixins/banner
 	.row
 		.col-sm-4.mb-30
 			+logo
-
-.mb-30
-	+banner(banner)
 
 .container
 	.row
