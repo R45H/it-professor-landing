@@ -19,7 +19,7 @@ $name: btn;
 	cursor: pointer;
 	line-height: 1.2;
 	outline: none;
-	padding: 5px 10px;
+	padding: 6px 15px;
 	word-break: break-word;
 	user-select: none;
 
@@ -75,6 +75,17 @@ $name: btn;
 	&_wide {
 		display: flex;
 		width: 100%;
+	}
+
+	&_disabled {
+		cursor: default;
+		background-color: $color-lightgray;
+
+		&:hover,
+		&:focus,
+		&:active {
+			background-color: $color-lightgray;
+		}
 	}
 }
 

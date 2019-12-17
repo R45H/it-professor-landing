@@ -6,6 +6,7 @@ include ../mixins/slider
 include ../mixins/resource
 include ../mixins/project
 include ../mixins/banner
+include ../mixins/check
 
 .mb-4rem
 	+banner(banner)
@@ -28,6 +29,28 @@ include ../mixins/banner
 			a.link.link_nowrap(href='#') .link.link_nowrap
 
 	.row
+		.col-sm-3.mb-4rem
+			input.input(type='text' placeholder='.input')
+		.col-sm-3.mb-4rem
+			input.input.input_tel(type='tel' placeholder='.input type=tel')
+		.col-sm-3.mb-4rem
+			textarea.input(placeholder='textarea.input')
+		.col-sm-3.mb-4rem
+			input.input.input_error(type='text' placeholder='.input.input_error')
+
+	.row
+		.col-sm-3.mb-4rem
+			+check({
+				id: 'check-1',
+				text: '.check'
+			})
+		.col-sm-3.mb-4rem
+			+check({
+				id: 'check-2',
+				text: '.check.check_size_sm'
+			})(class='check_size_sm')
+
+	.row
 		.col-sm-4.mb-4rem
 			.title .title
 
@@ -37,10 +60,10 @@ include ../mixins/banner
 		.col-sm-4.mb-4rem.main__black
 			.title.title_color_white .title.title_color_white
 
-		.col-sm-4.mb-4rem.main__black
+		.col-sm-4.mb-4rem
 			.title.title_weight_normal .title.title_weight_normal
 
-		.col-sm-4.mb-4rem.main__black
+		.col-sm-4.mb-4rem
 			.title.title_size_sm .title.title_size_sm
 
 	.row
@@ -71,6 +94,9 @@ include ../mixins/banner
 			.btn.btn_size_lg
 				span .btn.btn_size_lg (with icon)
 				img(src='img/icons/envelope.jpg')
+
+		.col-sm-4.mb-4rem
+			button.btn.btn_disabled .btn.btn_disabled
 
 	.row
 		.col-sm-4.mb-4rem

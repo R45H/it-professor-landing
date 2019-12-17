@@ -1,0 +1,53 @@
+include ../mixins/check
+
+#modalOffer.modal
+	.modal__wrap
+
+		i.fa.fa-close.modal__close(data-modal-close)
+
+		.modal__head
+			.title.modal__title Запросить коммерческое предложение
+
+		.modal__body
+			form
+				.mb-15
+					input.input(type='text' placeholder='Имя' required)
+				.mb-15
+					input.input.input_tel(type='tel' placeholder='Телефон' required)
+				.mb-15
+					input.input(type='email' placeholder='E-mail')
+				.mb-15
+					textarea.input(placeholder='Комментарий')
+				.mb-15
+					+check({
+						id: 'modalOfferConfirm',
+						text: 'Я согласен с обработкой моих персональных данных'
+					})(class='check_size_sm')
+				.mb-15
+					input.btn.modal__btn(type='submit' value='Отправить')
+
+#modalCallback.modal
+	.modal__wrap
+
+		i.fa.fa-close.modal__close(data-modal-close)
+
+		.modal__head
+			.title.modal__title Заказать звонок
+
+		.modal__body
+			form
+				.mb-15
+					input.input(type='text' placeholder='Имя' required)
+				.mb-15
+					input.input.input_tel(type='tel' placeholder='Телефон' required)
+				.mb-15
+					input.input(type='email' placeholder='E-mail')
+				.mb-15
+					textarea.input(placeholder='Комментарий')
+				.mb-15
+					+check({
+						id: 'modalCallbackConfirm',
+						text: 'Я согласен с обработкой моих персональных данных'
+					})(class='check_size_sm')
+				.mb-15
+					input.btn.modal__btn(type='submit' value='Перезвоните мне')

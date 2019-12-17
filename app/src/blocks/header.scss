@@ -25,9 +25,9 @@ $name: header;
 			display: flex;
 			justify-content: center;
 
-				@include screen-sm() {
-					justify-content: flex-start;
-				}
+			@include screen-sm() {
+				justify-content: flex-start;
+			}
 		}
 
 		&_center {

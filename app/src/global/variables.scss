@@ -2,6 +2,7 @@ $color-main: #e31e24;
 $color-main-hover: lighten($color-main, 10%);
 $color-main-active: darken($color-main, 10%);
 $color-text: #2b2a29;
+$color-lightgray: lighten($color-text, 40%);
 
 $point-sm: 576px;
 $point-md: 768px;
