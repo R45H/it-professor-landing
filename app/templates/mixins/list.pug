@@ -1,7 +1,11 @@
 mixin list(data)
 	.list
 		.list__icon-wrap
-			.list__icon(style=`background-image: url(${data.icon})`)
+			.list__icon(
+				style=`background-image: url(${data.icon})`
+				role='img'
+				aria-label= data.title
+			)
 
 		.list__wrap
 			if data.title

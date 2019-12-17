@@ -1,4 +1,9 @@
 mixin project(data)
 	.project
-		.project__wrap(style=`background-image: url(${data.img})`)
+		.project__wrap(
+			style=`background-image: url(${data.img})`
+			role='img'
+			aria-label= data.title
+			title= data.title
+		)
 			.project__title= data.title

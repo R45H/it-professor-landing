@@ -8,6 +8,13 @@ mixin resource(data)
 		a.resource__img-wrap(
 			href= data.link
 			target='_blank'
+			rel='nofollow'
 		)
-			.resource__img(style=`background-image: url(${data.img})`)
+			.resource__img(
+				style=`background-image: url(${data.img})`
+				role='img'
+				aria-label= data.title
+				title= data.title
+			)
+
 			.title.title_upper.title_color_white.resource__subtitle= data.subtitle
