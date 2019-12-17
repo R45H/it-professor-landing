@@ -1,3 +1,4 @@
+include ../components/logo
 include ../mixins/num
 include ../mixins/list
 include ../mixins/partner
@@ -53,6 +54,10 @@ include ../mixins/project
 			.btn.btn_size_lg
 				span .btn.btn_size_lg (with icon)
 				img(src='img/icons/envelope.jpg')
+
+	.row
+		.col-sm-4.mb-30
+			+logo
 
 .mb-30
 	.banner(style='background-image: url(img/content/banner.jpg)')
