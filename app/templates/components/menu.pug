@@ -4,4 +4,4 @@ mixin menu
 
 			each val in menu
 				li.title.title_size_sm
-					a.link.link_color_text.link_line_none.menu__link(href='#')= val.title
+					a.link.link_color_text.link_line_none.menu__link.scroll(href=`#${val.link}`)= val.title

@@ -11,6 +11,9 @@ $(function() {
 	(function() {
 		//=require 'blocks/input/input.js'
 	}());
+	(function() {
+		//=require 'blocks/scroll.js'
+	}());
 	/* Blocks will be inserted here */
 });
 

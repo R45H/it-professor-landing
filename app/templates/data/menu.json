@@ -1,16 +1,20 @@
 {
 	"menu": [
 		{
-			"title": "О компании"
+			"title": "О компании",
+			"link": "sectionCompany"
 		},
 		{
-			"title": "Направления работы"
+			"title": "Направления работы",
+			"link": "sectionDirections"
 		},
 		{
-			"title": "Проекты"
+			"title": "Проекты",
+			"link": "sectionProjects"
 		},
 		{
-			"title": "Контакты"
+			"title": "Контакты",
+			"link": "sectionContacts"
 		}
 	]
 }
